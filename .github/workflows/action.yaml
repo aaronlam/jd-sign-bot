@@ -1,4 +1,4 @@
-name: Github JD-sign bot
+name: JD Sign Bot
 
 on:
     push:
