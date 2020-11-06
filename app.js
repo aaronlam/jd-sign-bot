@@ -31,7 +31,8 @@ async function changeFile() {
 }
 
 async function sendNotify(text, desp) {
-  await promise.all([sendWeChat(text, desp), sendTelegram(text, desp)]);
+  await sendWeChat(text, desp);
+  await sendTelegram(text, desp);
 }
 
 async function sendWeChat(text, desp) {
@@ -41,7 +42,7 @@ async function sendWeChat(text, desp) {
 
   const options = {
     uri: `https://sc.ftqq.com/${serverJ}.send`,
-    form: { text, desp },
+    body: { text, desp },
     json: true,
     method: "POST",
   };
