@@ -22,3 +22,6 @@ jobs:
               env:
                 JD_COOKIE: ${{ secrets.JD_COOKIE }}
                 PUSH_KEY: ${{ secrets.PUSH_KEY }}
+                IS_NOTIFY_RES: ${{ secrets.IS_NOTIFY_RES }}
+                TG_BOT_API_SECRET: ${{ secrets.TG_BOT_API_SECRET }}
+                TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
