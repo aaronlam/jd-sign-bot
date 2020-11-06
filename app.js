@@ -42,7 +42,7 @@ async function sendWeChat(text, desp) {
 
   const options = {
     uri: `https://sc.ftqq.com/${serverJ}.send`,
-    body: { text, desp },
+    form: { text, desp },
     json: true,
     method: "POST",
   };
@@ -63,7 +63,7 @@ async function sendTelegram(text, desp) {
 
   const options = {
     uri: `https://corsapi.aaronlam.xyz/http://home.ngrok.aaronlam.xyz:8000/sendbotmsg`,
-    form: {
+    body: {
       id: tgChatId,
       msg: desp,
     },
