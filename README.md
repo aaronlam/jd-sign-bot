@@ -6,8 +6,9 @@
 
 1. Open chrome Devtools and toggle device
 2. Using mobile phone login JD with url: https://plogin.m.jd.com/login/login 
-3. Run script `copy(document.cookie)` in the `Console`
-4. Cookie will automatically copy by the script
+3. Devtools `Network` window filter content with `m.jd.com`
+4. Find `m.jd.com` http request and click the request
+5. Copy http header cookie value
 
 ### 2. Depoly Bot
 
